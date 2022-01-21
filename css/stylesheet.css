@@ -1,5 +1,5 @@
 * {
-  box-sizing: border-box; /*Não deixa que a largura dos alementos não sofra alterações com o valor do padding*/
+  box-sizing: border-box; 
 }
 
 body {
@@ -11,18 +11,18 @@ body {
 }
 
 .wrapper{
-  display: flex; /*Diz que o display será flexível, sem ele o display adotado será o block*/
-  flex-wrap: wrap; /*Diz que haverá quebra de linha. Respeitando a largura interna, o valor definido no bloco*/
+  display: flex; 
+  flex-wrap: wrap;
   max-width: 900px;
   width: 100%;
   margin: 50px auto;
 }
 
 .block {
-  width: calc(100%/ 3 - 20px); /*Pegará toda a área útil da tela e divide divide por 3 que é a quantidade de itens que teremos por linha. O -20px é o valor do margin abaixo. Que será 10px de cada lado*/
+  width: calc(100%/ 3 - 20px); 
   margin: 10px;
   border: 1px solid #ccc;
-  box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.2); /*Aplicação da sombra*/
+  box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.2);
   display: flex;
   flex-direction: column;
 }
@@ -34,12 +34,12 @@ body {
 .block-img img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /*Faz com que a imagem não perca a dimensão*/
+  object-fit: cover; 
 }
 
 .block-desc {
   padding: 15px;
-  flex-grow: 1; /*diz que o conteúdo poderá ser expandido. Adaptando-se ao tamanho do conteúdo.*/
+  flex-grow: 1; 
 }
 .block-link {
   border-top: 1px solid #ccc;
